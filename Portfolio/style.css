@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,14 +7,12 @@ body {
 }
 
 .container {
-    /* max-width: 1200px; */
     display: contents;
     margin: auto;
-    /* padding: 30px; */
+   
    
 }
 
-/* Header styles */
 header {
     color: white;
     text-align: center;
@@ -23,40 +21,42 @@ header {
 .hero1 {
     display: flex;
     background: #4A90E2;
-    justify-content: space-between; /* Space between logo and nav */
-    align-items: center; /* Center items vertically */
-    padding: 0 30px; /* Padding for spacing */
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 30px; 
     margin-top: 0;
     padding-top: 0;
+    position: sticky !important;
+    
 }
 
 .logo {
-    font-size: 24px; /* Increase logo font size */
+    font-size: 24px; 
     font-weight: bold;
 }
 
 nav ul {
-    list-style: none; /* Remove default list style */
+    list-style: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Flex layout for horizontal items */
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 15px; /* Spacing between list items */
+    margin: 0 15px; 
 }
 
 nav ul li a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
+    color: white; 
+    text-decoration: none; 
     font-weight: bold;
 }
 nav ul li:hover{
-    color: #1c3858; /* Change link color on hover */
+    color: #1c3858; 
 
 }
 
-/* Hero section */
+
 .hero {
     padding: 30px 20px;
 }
@@ -69,7 +69,21 @@ nav ul li:hover{
     font-size: 18px;
 }
 
-/* About section */
+.resume a{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    background: #4A90E2;
+    color: #f4f4f4;
+    margin-bottom: 5% ;
+}
+.resume a :hover{
+    background: #1c3858;
+    color: white;
+    cursor: pointer;
+}
+
 #about {
     margin: -5px 0;
     text-align: center;
@@ -79,25 +93,28 @@ nav ul li:hover{
 }
 
 #about img {
-    width: 150px; /* Size of image */
-    border-radius: 50%; /* Circular image */
+    width: 150px; 
+    border-radius: 50%;
 }
 
 .icon {
-    margin-top: 20px; /* Spacing above icons */
+    margin-top: 3%;
+    padding: 15px 20px;
 }
 
 .icon a {
-    margin: 0 10px; /* Spacing between icons */
-    font-size: 24px; /* Icon size */
+    margin: 0 10px;
+    font-size: 24px; 
 }
 
-/* Skills section */
 .skill{
     margin-top: 15px;
 }
-.skills h2{
+.skill h2{
     text-align: center !important;
+    margin-top: 10%;
+    font-weight: bold;
+    font-size: 20px;
 }
 .about-skill{
     display: flex;
@@ -123,7 +140,6 @@ nav ul li:hover{
 }
 
 
-/* Project section */
 section {
     margin: 40px 0;
     margin-left: 15px;
@@ -134,80 +150,104 @@ section h2{
 }
 
 .card {
-    margin: 15px 0; /* Spacing between cards */
-    margin-left: 10px;
+    width: 100%;
+    max-width: 22rem;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+.btn {
+    align-self: center;
+    margin-top: auto;
 }
 
-.card img {
-    width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* Contact section */
 .grid {
     display: flex;
-    flex-wrap: wrap; /* Ensures that items wrap if they don't fit */
-    justify-content: space-between; /* Adjust spacing */
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     margin-left: 10px;
 }
 .contact-item {
-    flex: 1 1 calc(33% - 16px); /* Adjusts for 3 items side by side with margin */
-    margin: 8px; /* Space between items */
-    padding: 16px; /* Inner padding */
-    border: 1px solid #e0e0e0; /* Optional border for separation */
-    border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    flex: 1 1 calc(33% - 16px);
+    margin: 8px;
+    padding: 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .contact-item hr {
-    margin: 16px 0; /* Space above and below hr */
+    margin: 16px 0;
 }
 
-/* Footer styles */
 .footer {
-    background: #333; /* Dark background for footer */
+    background: #333; 
     margin-left: 10px;
-    color: white; /* Text color */
+    color: white; 
     padding: 20px 0;
-    text-align: center; /* Center the footer text */
+    text-align: center; 
 }
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between; /* Space between elements */
+    justify-content: space-between; 
     align-items: center;
-    padding: 0 20px; /* Padding for spacing */
+    padding: 0 20px; 
 }
 
 .footer-bottom-left {
-    margin: 0; /* Remove margin */
+    margin: 0;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
     .hero1 {
-        flex-direction: column; /* Stack elements on smaller screens */
-        align-items: flex-start; /* Align left */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     nav ul {
-        flex-direction: column; /* Vertical layout for nav */
+        flex-direction: column; 
     }
 
     nav ul li {
-        margin: 10px 0; /* Spacing for vertical nav */
+        margin: 10px 0; 
     }
     .contact-item {
-        flex: 1 1 calc(50% - 16px); /* 2 items side by side on smaller screens */
+        flex: 1 1 calc(50% - 16px); 
     }
 
     .footer-bottom {
-        flex-direction: column; /* Stack footer items on small screens */
+        flex-direction: column; 
         align-items: center;
     }
 }
 
 @media (max-width: 480px) {
     .contact-item {
-        flex: 1 1 100%; /* Stacks on smaller screens */
+        flex: 1 1 100%; 
     }
 }
